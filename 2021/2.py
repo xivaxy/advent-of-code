@@ -9,13 +9,15 @@ a = 0
 for l in lines:
     c, n = l.split(" ")
     n = int(n)
-    if c[0] == "f":
-        h += n
-        d += a * n
-    elif c[0] == "d":
-        a += n
-    elif c[0] == "u":
-        a -= n
+    match c[0]:
+        case "f":
+            h += n
+            d += a * n
+        case "d":
+            a += n
+        case "u":
+            a -= n
+            
 
 ans = d * h
 
