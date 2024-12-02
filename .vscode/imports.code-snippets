@@ -1,0 +1,38 @@
+{
+	// Place your snippets for python here. Each snippet is defined under a snippet name and has a prefix, body and 
+	// description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+	// same ids are connected.
+	// Example:
+	"AOC template": {
+		"prefix": "aoc",
+		"body": [
+			"from aocd import data, submit",
+			"",
+			"s=''''''",
+			"test = False",
+			"if test:",
+			"    data=s",
+			"ans=0",
+			"",
+			"",
+			"print(ans)",
+			"if not test:",
+			"    submit(ans)",
+		],
+		"description": "AOC template"
+	},
+	"AOC extra imports": {
+		"prefix": "aocextra",
+		"body": [
+			"import sys",
+			"sys.path.append('../advent-of-code')",
+			"from aoc_utils import intify, neigh4, neigh8",
+			"import re",
+			"# import numpy as np",
+			"# import regex as re",
+			"# from z3 import *",
+		],
+		"description": "Add extra imports for AOC"
+	}
+}
