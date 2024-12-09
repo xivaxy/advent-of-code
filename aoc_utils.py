@@ -14,6 +14,8 @@ def intify(a: list|str, output_tuples = False):
 neigh4 = [(1,0), (0, -1), (-1, 0), (0, 1)]
 neigh8 = [(1,0), (1,-1), (0, -1), (-1, -1), (-1, 0), (-1, 1), (0, 1), (1, 1)]
 neigh6 = [(1,0,0), (0, -1,0), (-1, 0,0), (0, 1,0),(0,0,1), (0,0,-1)]
+tuple_add = lambda a,b: tuple(x+y for x,y in zip(a,b))
+tuple_sub = lambda a,b: tuple(x-y for x,y in zip(a,b))
 
 import math 
 
